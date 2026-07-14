@@ -103,16 +103,22 @@ Every session follows the same protocol (it's in CLAUDE.md):
 
 ### Option A: Claude Code user skill (recommended)
 ```bash
+npx skills add https://github.com/baasbank/harness-scaffold -a claude-code
+```
+Claude Code will load it automatically on startup.
+
+### Option B: Claude Code user skill (recommended)
+```bash
 mkdir -p ~/.claude/skills/harness-scaffold
 cp SKILL.md ~/.claude/skills/harness-scaffold/SKILL.md
 ```
 Claude Code will load it automatically on startup.
 
-### Option B: Per-project skill
+### Option C: Per-project skill
 ```bash
 mkdir -p .claude/skills/harness-scaffold
 cp SKILL.md .claude/skills/harness-scaffold/SKILL.md
 ```
 
-### Option C: Just paste SKILL.md into the conversation
+### Option D: Just paste SKILL.md into the conversation
 In a Claude Code session, paste the full contents of SKILL.md before your plan.
